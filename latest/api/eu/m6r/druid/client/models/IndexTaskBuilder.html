@@ -432,7 +432,7 @@ generated in the eu.m6r.druid.client.models package.">
         <span class="name">addDimension</span><span class="params">(<span name="dimension">dimension: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      <p class="shortcomment cmt">Add dimensions to list of dimensions.</p><div class="fullcomment"><div class="comment cmt"><p>Add dimensions to list of dimensions.</p><p>Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</p></div><dl class="paramcmts block"><dt class="param">dimension</dt><dd class="cmt"><p>Dimension name as String</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+      <p class="shortcomment cmt">Add dimensions to list of dimensions.</p><div class="fullcomment"><div class="comment cmt"><p>Add dimensions to list of dimensions.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</code></p></div><dl class="paramcmts block"><dt class="param">dimension</dt><dd class="cmt"><p>Dimension name as String</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInputPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="addInputPath(inputPath:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addInputPath(String):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -480,7 +480,7 @@ generated in the eu.m6r.druid.client.models package.">
         <span class="name">addMetric</span><span class="params">(<span name="typeName">typeName: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Add metric to the list of metrics.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -958,7 +958,7 @@ generated in the eu.m6r.druid.client.models package.">
         <span class="name">withDestinationSource</span><span class="params">(<span name="destinationSource">destinationSource: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      <p class="shortcomment cmt">The target druid source.</p><div class="fullcomment"><div class="comment cmt"><p>The target druid source.</p><p>Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;dataSource&quot;</p></div><dl class="paramcmts block"><dt class="param">destinationSource</dt><dd class="cmt"><p>Name of of source</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+      <p class="shortcomment cmt">The target druid source.</p><div class="fullcomment"><div class="comment cmt"><p>The target druid source.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;dataSource&quot;</code></p></div><dl class="paramcmts block"><dt class="param">destinationSource</dt><dd class="cmt"><p>Name of source</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withDimensions" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withDimensions(dimensions:Seq[String]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withDimensions(Seq[String]):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -975,7 +975,7 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <p class="shortcomment cmt">Sets druid dimensions</p><div class="fullcomment"><div class="comment cmt"><p>Sets druid dimensions</p><p>Overrides old dimension list.
-Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</p></div><dl class="paramcmts block"><dt class="param">dimensions</dt><dd class="cmt"><p>Sequence of all dimensions</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</code></p></div><dl class="paramcmts block"><dt class="param">dimensions</dt><dd class="cmt"><p>Sequence of all dimensions</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withInputPaths" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withInputPaths(inputPaths:Seq[String]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withInputPaths(Seq[String]):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1040,7 +1040,7 @@ Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dime
       </span>
       
       <p class="shortcomment cmt">Sets list of metrics from a list of tuples.</p><div class="fullcomment"><div class="comment cmt"><p>Sets list of metrics from a list of tuples.</p><p>Tuples have to contain <code>(type, name, Option(fieldName))</code>.
-If <code>fieldName</code> is <code>None</code> <code>name</code> is used for <code>fieldName</code>.</p></div><dl class="paramcmts block"><dt class="param">metrics</dt><dd class="cmt"><p>List of tuples containing the metrics.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <code>fieldName</code>.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;metricsSpec&quot;</code></p></div><dl class="paramcmts block"><dt class="param">metrics</dt><dd class="cmt"><p>List of tuples containing the metrics.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withQueryGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withQueryGranularity(queryGranularity:eu.m6r.druid.client.granularities.QueryGranularity):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withQueryGranularity(QueryGranularity):IndexTaskBuilder"></a>
       <span class="permalink">
