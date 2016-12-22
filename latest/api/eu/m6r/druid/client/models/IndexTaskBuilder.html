@@ -481,22 +481,6 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addMetric" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="addMetric(metric:(String,String,Option[String])):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addMetric((String,String,Option[String])):IndexTaskBuilder"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#addMetric(metric:(String,String,Option[String])):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">addMetric</span><span class="params">(<span name="metric">metric: (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
-      </span>
-      
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -1040,7 +1024,7 @@ Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dime
       </span>
       
       
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withMetrics" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withMetrics" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withMetrics(metrics:Seq[(String,String,Option[String])]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withMetrics(Seq[(String,String,Option[String])]):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withMetrics(metrics:Seq[(String,String,Option[String])]):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1055,7 +1039,8 @@ Sets &quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dime
         <span class="name">withMetrics</span><span class="params">(<span name="metrics">metrics: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>])]</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Sets list of metrics from a list of tuples.</p><div class="fullcomment"><div class="comment cmt"><p>Sets list of metrics from a list of tuples.</p><p>Tuples have to contain <code>(type, name, Option(fieldName))</code>.
+If <code>fieldName</code> is <code>None</code> <code>name</code> is used for <code>fieldName</code>.</p></div><dl class="paramcmts block"><dt class="param">metrics</dt><dd class="cmt"><p>List of tuples containing the metrics.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withQueryGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withQueryGranularity(queryGranularity:eu.m6r.druid.client.granularities.QueryGranularity):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withQueryGranularity(QueryGranularity):IndexTaskBuilder"></a>
       <span class="permalink">
