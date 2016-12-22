@@ -449,6 +449,42 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addInterval(startTime:org.joda.time.DateTime,endTime:org.joda.time.DateTime):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addInterval(DateTime,DateTime):IndexTaskBuilder"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#addInterval(startTime:org.joda.time.DateTime,endTime:org.joda.time.DateTime):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addInterval</span><span class="params">(<span name="startTime">startTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="endTime">endTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Add input intervals.</p><div class="fullcomment"><div class="comment cmt"><p>Add input intervals.</p><p>Only events inside these intervals will be stored in the target source.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;intervals&quot;</code>
+and <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;ioConfig&quot; / &quot;inputSpec&quot; / &quot;ingestionSpec&quot; / &quot;intervals&quot;</code>
+</p></div><dl class="paramcmts block"><dt class="param">startTime</dt><dd class="cmt"><p>Start time of the interval</p></dd><dt class="param">endTime</dt><dd class="cmt"><p>End time of the interval</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="addInterval(interval:org.joda.time.Interval):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addInterval(Interval):IndexTaskBuilder"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#addInterval(interval:org.joda.time.Interval):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">addInterval</span><span class="params">(<span name="interval">interval: <span class="extype" name="org.joda.time.Interval">Interval</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Add input intervals.</p><div class="fullcomment"><div class="comment cmt"><p>Add input intervals.</p><p>Only events inside these intervals will be stored in the target source.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;intervals&quot;</code>
+and <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;ioConfig&quot; / &quot;inputSpec&quot; / &quot;ingestionSpec&quot; / &quot;intervals&quot;</code>
+</p></div><dl class="paramcmts block"><dt class="param">interval</dt><dd class="cmt"><p>JodaTime interval</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addMetric" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addMetric(typeName:String,name:String,fieldName:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addMetric(String,String,String):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -671,10 +707,10 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#interval" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="interval:Option[org.joda.time.Interval]"></a><a id="interval:Option[Interval]"></a>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#intervals" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="intervals:Seq[String]"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#interval:Option[org.joda.time.Interval]" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#intervals:Seq[String]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -683,7 +719,7 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
         <span class="kind">var</span>
       </span>
       <span class="symbol">
-        <span class="name">interval</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="org.joda.time.Interval">Interval</span>]</span>
+        <span class="name">intervals</span><span class="result">: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
@@ -993,10 +1029,10 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       </span>
       
       
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withInterval(startTime:org.joda.time.DateTime,endTime:org.joda.time.DateTime):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withInterval(DateTime,DateTime):IndexTaskBuilder"></a>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withIntervals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withIntervals(intervals:Seq[org.joda.time.Interval]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withIntervals(Seq[Interval]):IndexTaskBuilder"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withInterval(startTime:org.joda.time.DateTime,endTime:org.joda.time.DateTime):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withIntervals(intervals:Seq[org.joda.time.Interval]):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1005,26 +1041,12 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withInterval</span><span class="params">(<span name="startTime">startTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="endTime">endTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
+        <span class="name">withIntervals</span><span class="params">(<span name="intervals">intervals: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="org.joda.time.Interval">Interval</span>]</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="withInterval(interval:org.joda.time.Interval):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withInterval(Interval):IndexTaskBuilder"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withInterval(interval:org.joda.time.Interval):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">withInterval</span><span class="params">(<span name="interval">interval: <span class="extype" name="org.joda.time.Interval">Interval</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
-      </span>
-      
-      
+      <p class="shortcomment cmt">Set input intervals.</p><div class="fullcomment"><div class="comment cmt"><p>Set input intervals.</p><p>Only events inside these intervals will be stored in the target source.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;intervals&quot;</code>
+and <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;ioConfig&quot; / &quot;inputSpec&quot; / &quot;ingestionSpec&quot; / &quot;intervals&quot;</code>
+</p></div><dl class="paramcmts block"><dt class="param">intervals</dt><dd class="cmt"><p>JodaTime intervals</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withMetrics" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withMetrics(metrics:Seq[(String,String,Option[String])]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withMetrics(Seq[(String,String,Option[String])]):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1043,7 +1065,7 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       <p class="shortcomment cmt">Sets list of metrics from a list of tuples.</p><div class="fullcomment"><div class="comment cmt"><p>Sets list of metrics from a list of tuples.</p><p>Tuples have to contain <code>(type, name, Option(fieldName))</code>.
 If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <code>fieldName</code>.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;metricsSpec&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">metrics</dt><dd class="cmt"><p>List of tuples containing the metrics.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withQueryGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withQueryGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withQueryGranularity(queryGranularity:eu.m6r.druid.client.granularities.QueryGranularity):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withQueryGranularity(QueryGranularity):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withQueryGranularity(queryGranularity:eu.m6r.druid.client.granularities.QueryGranularity):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1058,7 +1080,8 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withQueryGranularity</span><span class="params">(<span name="queryGranularity">queryGranularity: <a href="../granularities/QueryGranularity.html" class="extype" name="eu.m6r.druid.client.granularities.QueryGranularity">QueryGranularity</a></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Set target query granularity.</p><div class="fullcomment"><div class="comment cmt"><p>Set target query granularity.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;queryGranularity&quot;</code>
+</p></div><dl class="paramcmts block"><dt class="param">queryGranularity</dt><dd class="cmt"><p>Query granularity.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withReducerMemory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withReducerMemory(reducerMemory:Option[Int]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withReducerMemory(Option[Int]):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1106,7 +1129,7 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withSegmentGranularity</span><span class="params">(<span name="segmentGranularity">segmentGranularity: <a href="../granularities/SegmentGranularity.html" class="extype" name="eu.m6r.druid.client.granularities.SegmentGranularity">SegmentGranularity</a></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      <p class="shortcomment cmt">Target segment granularity.</p><div class="fullcomment"><div class="comment cmt"><p>Target segment granularity.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;segmentGranularity&quot;</code>
+      <p class="shortcomment cmt">Set target segment granularity.</p><div class="fullcomment"><div class="comment cmt"><p>Set target segment granularity.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;segmentGranularity&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">segmentGranularity</dt><dd class="cmt"><p>Segment granularity.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="withSource(source:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withSource(String):IndexTaskBuilder"></a>
