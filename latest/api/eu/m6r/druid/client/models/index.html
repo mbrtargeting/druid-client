@@ -267,6 +267,12 @@ generated in the eu.m6r.druid.client.models package.">
                         </a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
+                        <a class="class" href="TaskConfig.html" title="Java-Klasse für anonymous complex type."></a>
+                        <a href="TaskConfig.html" title="Java-Klasse für anonymous complex type.">
+                          TaskConfig
+                        </a>
+                      </li><li class="current-entities indented5">
+                        <span class="separator"></span>
                         <a class="class" href="TimestampSpec.html" title="Java-Klasse für timestampSpec complex type."></a>
                         <a href="TimestampSpec.html" title="Java-Klasse für timestampSpec complex type.">
                           TimestampSpec
@@ -363,9 +369,9 @@ generated in the eu.m6r.druid.client.models package.">
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="dataSource" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="granularitySpec" type="{}granularitySpec"/&gt;
-        &lt;element name="parser" type="{}parser"/&gt;
-        &lt;element name="metricsSpec" type="{}metric" maxOccurs="unbounded"/&gt;
+        &lt;element name="granularitySpec" type="{http://m6r.eu/druid/client/index-task}granularitySpec"/&gt;
+        &lt;element name="parser" type="{http://m6r.eu/druid/client/index-task}parser"/&gt;
+        &lt;element name="metricsSpec" type="{http://m6r.eu/druid/client/index-task}metric" maxOccurs="unbounded"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -454,7 +460,7 @@ generated in the eu.m6r.druid.client.models package.">
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="spec" type="{}spec"/&gt;
+        &lt;element name="spec" type="{http://m6r.eu/druid/client/index-task}spec"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -533,7 +539,7 @@ generated in the eu.m6r.druid.client.models package.">
       &lt;sequence&gt;
         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
         &lt;element name="paths" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
-        &lt;element name="ingestionSpec" type="{}ingestionSpec" minOccurs="0"/&gt;
+        &lt;element name="ingestionSpec" type="{http://m6r.eu/druid/client/index-task}ingestionSpec" minOccurs="0"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -562,7 +568,7 @@ generated in the eu.m6r.druid.client.models package.">
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="inputSpec" type="{}inputSpec" minOccurs="0"/&gt;
+        &lt;element name="inputSpec" type="{http://m6r.eu/druid/client/index-task}inputSpec" minOccurs="0"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -652,8 +658,8 @@ provided in this class.</p></div></div>
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="format" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="timestampSpec" type="{}timestampSpec"/&gt;
-        &lt;element name="dimensionsSpec" type="{}dimensionSpec"/&gt;
+        &lt;element name="timestampSpec" type="{http://m6r.eu/druid/client/index-task}timestampSpec"/&gt;
+        &lt;element name="dimensionsSpec" type="{http://m6r.eu/druid/client/index-task}dimensionSpec"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -682,7 +688,7 @@ provided in this class.</p></div></div>
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="format" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="parseSpec" type="{}parseSpec"/&gt;
+        &lt;element name="parseSpec" type="{http://m6r.eu/druid/client/index-task}parseSpec"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -739,9 +745,38 @@ provided in this class.</p></div></div>
   &lt;complexContent&gt;
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
-        &lt;element name="dataSchema" type="{}dataSchema"/&gt;
-        &lt;element name="ioConfig" type="{}ioConfig"/&gt;
-        &lt;element name="tuningConfig" type="{}tuningConfig" minOccurs="0"/&gt;
+        &lt;element name="dataSchema" type="{http://m6r.eu/druid/client/index-task}dataSchema"/&gt;
+        &lt;element name="ioConfig" type="{http://m6r.eu/druid/client/index-task}ioConfig"/&gt;
+        &lt;element name="tuningConfig" type="{http://m6r.eu/druid/client/index-task}tuningConfig" minOccurs="0"/&gt;
+      &lt;/sequence&gt;
+    &lt;/restriction&gt;
+  &lt;/complexContent&gt;
+&lt;/complexType&gt;
+</pre></p></div></div>
+    </li><li name="eu.m6r.druid.client.models.TaskConfig" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TaskConfigextendsObject"></a><a id="TaskConfig:TaskConfig"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/index.html#TaskConfigextendsObject" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Java-Klasse für anonymous complex type." href="TaskConfig.html">
+              <span class="name">TaskConfig</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Java-Klasse für anonymous complex type.</p><div class="fullcomment"><div class="comment cmt"><p>Java-Klasse für anonymous complex type.</p><p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.</p><p><pre>
+&lt;complexType&gt;
+  &lt;complexContent&gt;
+    &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+      &lt;sequence&gt;
+        &lt;element name="dimensions" type="{http://www.w3.org/2001/XMLSchema}string" maxOccurs="unbounded"/&gt;
+        &lt;element name="metrics" type="{http://m6r.eu/druid/client/index-task}metric" maxOccurs="unbounded"/&gt;
       &lt;/sequence&gt;
     &lt;/restriction&gt;
   &lt;/complexContent&gt;
@@ -800,7 +835,7 @@ provided in this class.</p></div></div>
     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
       &lt;sequence&gt;
         &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="partitionsSpec" type="{}partitionsSpec"/&gt;
+        &lt;element name="partitionsSpec" type="{http://m6r.eu/druid/client/index-task}partitionsSpec"/&gt;
         &lt;element name="jobProperties"&gt;
           &lt;complexType&gt;
             &lt;complexContent&gt;
