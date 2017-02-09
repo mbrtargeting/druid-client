@@ -1,4 +1,4 @@
-# Druid Client
+# Druid Client [![Build Status](https://travis-ci.org/mbrtargeting/druid-client.svg?branch=master)](https://travis-ci.org/mbrtargeting/druid-client)
 
 Druid client that simplifies interactions with the Druid API.
 
