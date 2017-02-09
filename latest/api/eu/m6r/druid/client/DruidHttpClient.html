@@ -378,7 +378,7 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.m6r.druid.client.DruidHttpClient#deleteSegmentsInInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.DruidHttpClient#deleteSegmentsInInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="deleteSegmentsInInterval(dataSource:String,interval:org.joda.time.Interval):scala.concurrent.Future[Seq[String]]"></a><a id="deleteSegmentsInInterval(String,Interval):Future[Seq[String]]"></a>
       <span class="permalink">
       <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#deleteSegmentsInInterval(dataSource:String,interval:org.joda.time.Interval):scala.concurrent.Future[Seq[String]]" title="Permalink">
@@ -393,7 +393,9 @@
         <span class="name">deleteSegmentsInInterval</span><span class="params">(<span name="dataSource">dataSource: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="interval">interval: <span class="extype" name="org.joda.time.Interval">Interval</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">Deletes all segments inside a given interval
+</p><div class="fullcomment"><div class="comment cmt"><p>Deletes all segments inside a given interval
+</p></div><dl class="paramcmts block"><dt class="param">dataSource</dt><dd class="cmt"><p>Name of the Druid data source</p></dd><dt class="param">interval</dt><dd class="cmt"><p>The interval. All segements inside the intervals time range will be deleted.</p></dd><dt>returns</dt><dd class="cmt"><p>Future containing a list of all deleted segments</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -531,7 +533,7 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.m6r.druid.client.DruidHttpClient#shutdownIndexingTask" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.DruidHttpClient#shutdownIndexingTask" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="shutdownIndexingTask(taskId:String):scala.concurrent.Future[Unit]"></a><a id="shutdownIndexingTask(String):Future[Unit]"></a>
       <span class="permalink">
       <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#shutdownIndexingTask(taskId:String):scala.concurrent.Future[Unit]" title="Permalink">
@@ -546,8 +548,10 @@
         <span class="name">shutdownIndexingTask</span><span class="params">(<span name="taskId">taskId: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Unit">Unit</span>]</span>
       </span>
       
-      
-    </li><li name="eu.m6r.druid.client.DruidHttpClient#startIndexTask" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Closes a running indexing task
+</p><div class="fullcomment"><div class="comment cmt"><p>Closes a running indexing task
+</p></div><dl class="paramcmts block"><dt class="param">taskId</dt><dd class="cmt"><p>Id of the task that shall be closed.</p></dd><dt>returns</dt><dd class="cmt"><p>Future that calls when the task has been closed.</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.DruidHttpClient#startIndexTask" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="startIndexTask(task:eu.m6r.druid.client.models.IndexTask):scala.concurrent.Future[String]"></a><a id="startIndexTask(IndexTask):Future[String]"></a>
       <span class="permalink">
       <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#startIndexTask(task:eu.m6r.druid.client.models.IndexTask):scala.concurrent.Future[String]" title="Permalink">
@@ -562,7 +566,8 @@
         <span class="name">startIndexTask</span><span class="params">(<span name="task">task: <a href="models/IndexTask.html" class="extype" name="eu.m6r.druid.client.models.IndexTask">IndexTask</a></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">Starts a new indexing task.</p><div class="fullcomment"><div class="comment cmt"><p>Starts a new indexing task.
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>Task to start. Use <a href="models/IndexTaskBuilder.html" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">models.IndexTaskBuilder</a> to create it.</p></dd><dt>returns</dt><dd class="cmt"><p>Future containing the task id.</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
