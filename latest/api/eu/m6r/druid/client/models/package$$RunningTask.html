@@ -223,8 +223,8 @@
                         </a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="class" href="" title="Java-Klasse für metric complex type."></a>
-                        <a href="" title="Java-Klasse für metric complex type.">
+                        <a class="class" href="Metric.html" title="Java-Klasse für metric complex type."></a>
+                        <a href="Metric.html" title="Java-Klasse für metric complex type.">
                           Metric
                         </a>
                       </li><li class="current-entities indented5">
@@ -257,8 +257,8 @@ generated in the eu.m6r.druid.client.models package.">
                         </a>
                       </li><li class="current-entities indented5">
                         <span class="separator"></span>
-                        <a class="class" href="package$$RunningTask.html" title=""></a>
-                        <a href="package$$RunningTask.html" title="">
+                        <a class="class" href="" title=""></a>
+                        <a href="" title="">
                           RunningTask
                         </a>
                       </li><li class="current-entities indented5">
@@ -300,8 +300,8 @@ generated in the eu.m6r.druid.client.models package.">
       <div id="definition">
         <div class="big-circle class">c</div>
         <p id="owner"><a href="../../../../index.html" class="extype" name="eu">eu</a>.<a href="../../../index.html" class="extype" name="eu.m6r">m6r</a>.<a href="../../index.html" class="extype" name="eu.m6r.druid">druid</a>.<a href="../index.html" class="extype" name="eu.m6r.druid.client">client</a>.<a href="index.html" class="extype" name="eu.m6r.druid.client.models">models</a></p>
-        <h1>Metric<span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html" title="Permalink">
+        <h1>RunningTask<span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span></h1>
@@ -311,31 +311,19 @@ generated in the eu.m6r.druid.client.models package.">
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">class</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Metric</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">RunningTask</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="createdTime">createdTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="queueInsertionTime">queueInsertionTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="location">location: <a href="package$$Location.html" class="extype" name="eu.m6r.druid.client.models.Location">Location</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Java-Klasse für metric complex type.</p><p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.</p><p><pre>
-&lt;complexType name="metric"&gt;
-  &lt;complexContent&gt;
-    &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-      &lt;sequence&gt;
-        &lt;element name="type" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-        &lt;element name="fieldName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
-      &lt;/sequence&gt;
-    &lt;/restriction&gt;
-  &lt;/complexContent&gt;
-&lt;/complexType&gt;
-</pre></p></div><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -361,7 +349,7 @@ generated in the eu.m6r.druid.client.models package.">
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="eu.m6r.druid.client.models.Metric"><span>Metric</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="eu.m6r.druid.client.models.RunningTask"><span>RunningTask</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -381,10 +369,10 @@ generated in the eu.m6r.druid.client.models package.">
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="eu.m6r.druid.client.models.Metric#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="&lt;init&gt;():eu.m6r.druid.client.models.Metric"></a><a id="&lt;init&gt;:Metric"></a>
+              <ol><li name="eu.m6r.druid.client.models.RunningTask#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(id:String,createdTime:org.joda.time.DateTime,queueInsertionTime:org.joda.time.DateTime,location:eu.m6r.druid.client.models.package.Location):eu.m6r.druid.client.models.package.RunningTask"></a><a id="&lt;init&gt;:RunningTask"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#&lt;init&gt;():eu.m6r.druid.client.models.Metric" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#&lt;init&gt;(id:String,createdTime:org.joda.time.DateTime,queueInsertionTime:org.joda.time.DateTime,location:eu.m6r.druid.client.models.package.Location):eu.m6r.druid.client.models.package.RunningTask" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -393,7 +381,7 @@ generated in the eu.m6r.druid.client.models package.">
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Metric</span><span class="params">()</span>
+        <span class="name">RunningTask</span><span class="params">(<span name="id">id: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="createdTime">createdTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="queueInsertionTime">queueInsertionTime: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>, <span name="location">location: <a href="package$$Location.html" class="extype" name="eu.m6r.druid.client.models.Location">Location</a></span>)</span>
       </span>
       
       
@@ -410,7 +398,7 @@ generated in the eu.m6r.druid.client.models package.">
                 <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#!=(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#!=(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -426,7 +414,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html###():Int" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html###():Int" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -442,7 +430,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#==(x$1:Any):Boolean" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#==(x$1:Any):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -458,7 +446,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#asInstanceOf[T0]:T0" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#asInstanceOf[T0]:T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -474,7 +462,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#clone():Object" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#clone():Object" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -493,10 +481,26 @@ generated in the eu.m6r.druid.client.models package.">
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.RunningTask#createdTime" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="createdTime:org.joda.time.DateTime"></a><a id="createdTime:DateTime"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#createdTime:org.joda.time.DateTime" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createdTime</span><span class="result">: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#eq(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -509,26 +513,10 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#equals(x$1:Any):Boolean" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#finalize():Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#finalize():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -550,7 +538,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#getClass():Class[_]" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#getClass():Class[_]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -563,83 +551,26 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#getFieldName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getFieldName():String"></a>
+    </li><li name="eu.m6r.druid.client.models.RunningTask#id" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="id:String"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#getFieldName():String" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#id:String" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">getFieldName</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+        <span class="name">id</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
       
-      <p class="shortcomment cmt">Ruft den Wert der fieldName-Eigenschaft ab.</p><div class="fullcomment"><div class="comment cmt"><p>Ruft den Wert der fieldName-Eigenschaft ab.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-    possible object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#getName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getName():String"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#getName():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getName</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
       
-      <p class="shortcomment cmt">Ruft den Wert der name-Eigenschaft ab.</p><div class="fullcomment"><div class="comment cmt"><p>Ruft den Wert der name-Eigenschaft ab.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-    possible object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#getType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="getType():String"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#getType():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">getType</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Ruft den Wert der type-Eigenschaft ab.</p><div class="fullcomment"><div class="comment cmt"><p>Ruft den Wert der type-Eigenschaft ab.
-</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>
-    possible object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#hashCode():Int" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#isInstanceOf[T0]:Boolean" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#isInstanceOf[T0]:Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -652,10 +583,26 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.RunningTask#location" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="location:eu.m6r.druid.client.models.package.Location"></a><a id="location:Location"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#location:eu.m6r.druid.client.models.package.Location" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">location</span><span class="result">: <a href="package$$Location.html" class="extype" name="eu.m6r.druid.client.models.Location">Location</a></span>
+      </span>
+      
+      
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#ne(x$1:AnyRef):Boolean" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -671,7 +618,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#notify():Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#notify():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -687,7 +634,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#notifyAll():Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#notifyAll():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -700,67 +647,26 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#setFieldName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="setFieldName(value:String):Unit"></a><a id="setFieldName(String):Unit"></a>
+    </li><li name="eu.m6r.druid.client.models.RunningTask#queueInsertionTime" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="queueInsertionTime:org.joda.time.DateTime"></a><a id="queueInsertionTime:DateTime"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#setFieldName(value:String):Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#queueInsertionTime:org.joda.time.DateTime" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">setFieldName</span><span class="params">(<span name="value">value: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">queueInsertionTime</span><span class="result">: <span class="extype" name="org.joda.time.DateTime">DateTime</span></span>
       </span>
       
-      <p class="shortcomment cmt">Legt den Wert der fieldName-Eigenschaft fest.</p><div class="fullcomment"><div class="comment cmt"><p>Legt den Wert der fieldName-Eigenschaft fest.
-</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>
-    allowed object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#setName" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="setName(value:String):Unit"></a><a id="setName(String):Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#setName(value:String):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setName</span><span class="params">(<span name="value">value: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
       
-      <p class="shortcomment cmt">Legt den Wert der name-Eigenschaft fest.</p><div class="fullcomment"><div class="comment cmt"><p>Legt den Wert der name-Eigenschaft fest.
-</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>
-    allowed object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.Metric#setType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="setType(value:String):Unit"></a><a id="setType(String):Unit"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#setType(value:String):Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">setType</span><span class="params">(<span name="value">value: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
-      </span>
-      
-      <p class="shortcomment cmt">Legt den Wert der type-Eigenschaft fest.</p><div class="fullcomment"><div class="comment cmt"><p>Legt den Wert der type-Eigenschaft fest.
-</p></div><dl class="paramcmts block"><dt class="param">value</dt><dd class="cmt"><p>
-    allowed object is
-    <code><span class="extype" name="String"></span></code></p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -773,26 +679,10 @@ generated in the eu.m6r.druid.client.models package.">
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#toString():String" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#wait():Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#wait():Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -814,7 +704,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -836,7 +726,7 @@ generated in the eu.m6r.druid.client.models package.">
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
       <span class="permalink">
-      <a href="../../../../../eu/m6r/druid/client/models/Metric.html#wait(x$1:Long):Unit" title="Permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/package$$RunningTask.html#wait(x$1:Long):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -865,7 +755,15 @@ generated in the eu.m6r.druid.client.models package.">
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>

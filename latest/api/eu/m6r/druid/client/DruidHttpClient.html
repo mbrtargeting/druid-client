@@ -533,6 +533,24 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.m6r.druid.client.DruidHttpClient#runningTasks" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="runningTasks():scala.concurrent.Future[Seq[eu.m6r.druid.client.models.RunningTask]]"></a><a id="runningTasks():Future[Seq[RunningTask]]"></a>
+      <span class="permalink">
+      <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#runningTasks():scala.concurrent.Future[Seq[eu.m6r.druid.client.models.RunningTask]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">runningTasks</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<span class="extype" name="scala.Seq">Seq</span>[<a href="models/package$$RunningTask.html" class="extype" name="eu.m6r.druid.client.models.RunningTask">RunningTask</a>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Get a list of the status of all running tasks
+</p><div class="fullcomment"><div class="comment cmt"><p>Get a list of the status of all running tasks
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Future containing a <span class="extype" name="Seq">Seq</span> of <a href="models/package$$TaskStatus.html" class="extype" name="eu.m6r.druid.client.models.TaskStatus">eu.m6r.druid.client.models.TaskStatus</a>.</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.DruidHttpClient#shutdownIndexingTask" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="shutdownIndexingTask(taskId:String):scala.concurrent.Future[Unit]"></a><a id="shutdownIndexingTask(String):Future[Unit]"></a>
       <span class="permalink">
@@ -567,7 +585,7 @@
       </span>
       
       <p class="shortcomment cmt">Starts a new indexing task.</p><div class="fullcomment"><div class="comment cmt"><p>Starts a new indexing task.
-</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>Task to start. Use <a href="models/IndexTaskBuilder.html" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">models.IndexTaskBuilder</a> to create it.</p></dd><dt>returns</dt><dd class="cmt"><p>Future containing the task id.</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>RunningTask to start. Use <a href="models/IndexTaskBuilder.html" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">models.IndexTaskBuilder</a> to create it.</p></dd><dt>returns</dt><dd class="cmt"><p>Future containing the task id.</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -584,6 +602,23 @@
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="eu.m6r.druid.client.DruidHttpClient#taskStatus" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="taskStatus(taskId:String):scala.concurrent.Future[eu.m6r.druid.client.models.TaskStatus]"></a><a id="taskStatus(String):Future[TaskStatus]"></a>
+      <span class="permalink">
+      <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#taskStatus(taskId:String):scala.concurrent.Future[eu.m6r.druid.client.models.TaskStatus]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">taskStatus</span><span class="params">(<span name="taskId">taskId: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.concurrent.Future">Future</span>[<a href="models/package$$TaskStatus.html" class="extype" name="eu.m6r.druid.client.models.TaskStatus">TaskStatus</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the status of a task.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the status of a task.
+</p></div><dl class="paramcmts block"><dt class="param">taskId</dt><dd class="cmt"><p>Druid task id</p></dd><dt>returns</dt><dd class="cmt"><p>Future containing the task status</p></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <span class="permalink">
@@ -663,24 +698,6 @@
       </span>
       <span class="symbol">
         <span class="name">zookeeperHosts</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      
-      
-    </li><li name="eu.m6r.druid.client.DruidHttpClient.DruidRoles" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="DruidRoles"></a><a id="DruidRoles:DruidRoles"></a>
-      <span class="permalink">
-      <a href="../../../../eu/m6r/druid/client/DruidHttpClient.html#DruidRoles" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="DruidHttpClient$DruidRoles$.html">
-              <span class="name">DruidRoles</span>
-            </a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
       </span>
       
       
