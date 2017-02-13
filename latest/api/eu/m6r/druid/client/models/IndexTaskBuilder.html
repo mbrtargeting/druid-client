@@ -464,7 +464,7 @@ generated in the eu.m6r.druid.client.models package.">
       
       <p class="shortcomment cmt">Add dimensions to list of dimensions.</p><div class="fullcomment"><div class="comment cmt"><p>Add dimensions to list of dimensions.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">dimension</dt><dd class="cmt"><p>Dimension name as String</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInputPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInputPath" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addInputPath(inputPath:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addInputPath(String):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#addInputPath(inputPath:String):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -479,7 +479,8 @@ generated in the eu.m6r.druid.client.models package.">
         <span class="name">addInputPath</span><span class="params">(<span name="inputPath">inputPath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Adds a base path to the list.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a base path to the list. Input paths indicating where the raw data is located.
+</p></div><dl class="paramcmts block"><dt class="param">inputPath</dt><dd class="cmt"><p>Input path</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#addInterval" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="addInterval(startTime:org.joda.time.DateTime,endTime:org.joda.time.DateTime):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="addInterval(DateTime,DateTime):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -568,7 +569,7 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#build" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#build" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="build():eu.m6r.druid.client.models.IndexTask"></a><a id="build():IndexTask"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#build():eu.m6r.druid.client.models.IndexTask" title="Permalink">
@@ -583,7 +584,8 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
         <span class="name">build</span><span class="params">()</span><span class="result">: <a href="IndexTask.html" class="extype" name="eu.m6r.druid.client.models.IndexTask">IndexTask</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Builds the <a href="IndexTask.html" class="extype" name="eu.m6r.druid.client.models.IndexTask">eu.m6r.druid.client.models.IndexTask</a> from the current builder state.</p><div class="fullcomment"><div class="comment cmt"><p>Builds the <a href="IndexTask.html" class="extype" name="eu.m6r.druid.client.models.IndexTask">eu.m6r.druid.client.models.IndexTask</a> from the current builder state.
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The built index task.</p></dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -1014,7 +1016,7 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withConfigFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withConfigFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withConfigFile(configFile:java.io.File):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withConfigFile(File):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withConfigFile(configFile:java.io.File):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1029,7 +1031,9 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
         <span class="name">withConfigFile</span><span class="params">(<span name="configFile">configFile: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Reads dimensions and metrics from a config file.</p><div class="fullcomment"><div class="comment cmt"><p>Reads dimensions and metrics from a config file. Config file follows the schema
+of <a href="TaskConfig.html" class="extype" name="eu.m6r.druid.client.models.TaskConfig">TaskConfig</a>.
+</p></div><dl class="paramcmts block"><dt class="param">configFile</dt><dd class="cmt"><p>Config file as File object.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withDestinationSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withDestinationSource(destinationSource:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withDestinationSource(String):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1064,7 +1068,7 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       
       <p class="shortcomment cmt">Sets druid dimensions</p><div class="fullcomment"><div class="comment cmt"><p>Sets druid dimensions</p><p>Overrides old dimension list.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;parser&quot; / &quot;dimensionsSpec&quot; / &quot;dimensions&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">dimensions</dt><dd class="cmt"><p>Sequence of all dimensions</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withInputPaths" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withInputPaths" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withInputPaths(inputPaths:Seq[String]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withInputPaths(Seq[String]):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withInputPaths(inputPaths:Seq[String]):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1079,7 +1083,8 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
         <span class="name">withInputPaths</span><span class="params">(<span name="inputPaths">inputPaths: <span class="extype" name="scala.Seq">Seq</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Input paths indicating where the raw data is located.</p><div class="fullcomment"><div class="comment cmt"><p>Input paths indicating where the raw data is located.
+</p></div><dl class="paramcmts block"><dt class="param">inputPaths</dt><dd class="cmt"><p>Seq of input paths.</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withIntervals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withIntervals(intervals:Seq[org.joda.time.Interval]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withIntervals(Seq[Interval]):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1133,7 +1138,7 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
       
       <p class="shortcomment cmt">Set target query granularity.</p><div class="fullcomment"><div class="comment cmt"><p>Set target query granularity.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;queryGranularity&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">queryGranularity</dt><dd class="cmt"><p>Query granularity.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withReducerMemory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withReducerMemory" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withReducerMemory(reducerMemory:Option[Int]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withReducerMemory(Option[Int]):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withReducerMemory(reducerMemory:Option[Int]):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1148,8 +1153,9 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withReducerMemory</span><span class="params">(<span name="reducerMemory">reducerMemory: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withReducerMemory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Set reducer memory.</p><div class="fullcomment"><div class="comment cmt"><p>Set reducer memory.
+</p></div><dl class="paramcmts block"><dt class="param">reducerMemory</dt><dd class="cmt"><p>Optional containing the amount of mem used by reducer in MB.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withReducerMemory" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withReducerMemory(reducerMemory:Int):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withReducerMemory(Int):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withReducerMemory(reducerMemory:Int):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1164,8 +1170,8 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withReducerMemory</span><span class="params">(<span name="reducerMemory">reducerMemory: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      <p class="shortcomment cmt">Set reducer memory
-</p>
+      <p class="shortcomment cmt">Set reducer memory.</p><div class="fullcomment"><div class="comment cmt"><p>Set reducer memory.
+</p></div><dl class="paramcmts block"><dt class="param">reducerMemory</dt><dd class="cmt"><p>Amount of mem used by reducer in MB.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withSegmentGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withSegmentGranularity(segmentGranularity:eu.m6r.druid.client.granularities.SegmentGranularity):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withSegmentGranularity(SegmentGranularity):IndexTaskBuilder"></a>
       <span class="permalink">
@@ -1183,7 +1189,7 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
       
       <p class="shortcomment cmt">Set target segment granularity.</p><div class="fullcomment"><div class="comment cmt"><p>Set target segment granularity.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;granularitySpec&quot; / &quot;segmentGranularity&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">segmentGranularity</dt><dd class="cmt"><p>Segment granularity.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withSource(source:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withSource(String):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withSource(source:String):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1198,8 +1204,9 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withSource</span><span class="params">(<span name="source">source: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withTargetPartitionSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">The name of the ingested datasource.</p><div class="fullcomment"><div class="comment cmt"><p>The name of the ingested datasource. Datasources can be thought of as tables.
+</p></div><dl class="paramcmts block"><dt class="param">source</dt><dd class="cmt"><p>Name of the data source</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withTargetPartitionSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withTargetPartitionSize(targetPartitionSize:Option[Int]):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withTargetPartitionSize(Option[Int]):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withTargetPartitionSize(targetPartitionSize:Option[Int]):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1214,8 +1221,11 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withTargetPartitionSize</span><span class="params">(<span name="targetPartitionSize">targetPartitionSize: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Int">Int</span>]</span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
-    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withTargetPartitionSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <p class="shortcomment cmt">Target number of rows to include in a partition, should be a number that targets
+segments of 500MB~1GB.</p><div class="fullcomment"><div class="comment cmt"><p>Target number of rows to include in a partition, should be a number that targets
+segments of 500MB~1GB.
+</p></div><dl class="paramcmts block"><dt class="param">targetPartitionSize</dt><dd class="cmt"><p>Option containing max number of rows per partition.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withTargetPartitionSize" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withTargetPartitionSize(targetPartitionSize:Int):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withTargetPartitionSize(Int):IndexTaskBuilder"></a>
       <span class="permalink">
       <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withTargetPartitionSize(targetPartitionSize:Int):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
@@ -1230,7 +1240,10 @@ If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <co
         <span class="name">withTargetPartitionSize</span><span class="params">(<span name="targetPartitionSize">targetPartitionSize: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Target number of rows to include in a partition, should be a number that targets
+segments of 500MB~1GB.</p><div class="fullcomment"><div class="comment cmt"><p>Target number of rows to include in a partition, should be a number that targets
+segments of 500MB~1GB.
+</p></div><dl class="paramcmts block"><dt class="param">targetPartitionSize</dt><dd class="cmt"><p>Max number of rows per partition.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li>
               </ol>
             </div>
