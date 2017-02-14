@@ -9,7 +9,7 @@ You can either use the `druid-client` as a Scala library or from command-line.
 
 Import to your Scala project:
 ```scala
-libraryDependencies ++= Seq("eu.m6r" %% "druid-client" % "0.1.0-SNAPSHOT")
+libraryDependencies ++= Seq("eu.m6r" %% "druid-client" % "0.1.0")
 ```
 
 ## CLI
@@ -64,13 +64,19 @@ To build fat jars:
 sbt +assembly
 ```
 
+## Publish artifact
+
+```bash
+sbt +publishSigned
+```
+
+
 ## Upload Scaladoc to Github Pages
 
 Build and upload Scaladoc documentation to Github pages.
 ```bash
 sbt ghpagesPushSite
 ```
-
 
 # TODO
 
