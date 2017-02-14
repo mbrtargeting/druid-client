@@ -64,13 +64,19 @@ To build fat jars:
 sbt +assembly
 ```
 
+## Publish artifact
+
+```bash
+sbt +publishSigned
+```
+
+
 ## Upload Scaladoc to Github Pages
 
 Build and upload Scaladoc documentation to Github pages.
 ```bash
 sbt ghpagesPushSite
 ```
-
 
 # TODO
 

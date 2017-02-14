@@ -6,6 +6,7 @@ name := "druid-client"
 organization := "eu.m6r"
 
 publishMavenStyle := true
+useGpg := true
 
 xjcJvmOpts += "-Duser.language=en"
 xjcCommandLine ++= Seq("-p", "eu.m6r.druid.client.models")
@@ -52,11 +53,11 @@ pomExtra := <url>https://github.com/mbrtargeting/druid-client</url>
       </developer>
     </developers>
 
-publishTo <<= version { (v: String) =>
-  val m6rRepo = "https://maven.m6r.eu/repository/"
-  if (v.trim.endsWith("SNAPSHOT")) {
-    Some("snapshots" at m6rRepo + "snapshots")
+publishTo := {
+  val nexus = "https://oss.sonatype.org/"
+  if (isSnapshot.value) {
+    Some("snapshots" at nexus + "content/repositories/snapshots")
   } else {
-    Some("releases" at m6rRepo + "mbr-release")
+    Some("releases" at nexus + "service/local/staging/deploy/maven2")
   }
 }
