@@ -343,8 +343,8 @@ final class IndexTaskBuilder {
     parser.setParseSpec(parseSpec)
 
     val granularitySpec = new GranularitySpec
-    granularitySpec.setQueryGranularity(queryGranularity.toString)
-    granularitySpec.setSegmentGranularity(segmentGranularity.toString)
+    granularitySpec.setQueryGranularity(queryGranularity.get.toString)
+    granularitySpec.setSegmentGranularity(segmentGranularity.get.toString)
     granularitySpec.getIntervals.addAll(intervals.asJava)
 
     val dataSchema = new DataSchema
