@@ -53,6 +53,7 @@ final class IndexTaskBuilder {
   protected var targetPartitionSize: Option[Int] = None
   protected var inputPaths: Seq[String] = Seq.empty
   protected var source: Option[String] = None
+  protected var missingTimestampValue: Option[String] = None
 
   /** The target druid source.
     *
@@ -293,6 +294,18 @@ final class IndexTaskBuilder {
     this
   }
 
+  /** Timestamp used if event timestamp is missing. Default == null.
+    *
+    * If set it has to be a parseable timestamp.
+    *
+    * @param missingTimestampValue Alternative timestamp as String.
+    * @return Updated builder
+    */
+  def withMissingTimestampValue(missingTimestampValue: String): IndexTaskBuilder = {
+    this.missingTimestampValue = Some(missingTimestampValue)
+    this
+  }
+
   private def validate(): Unit = {
     if (destinationSource.isEmpty) throw new BuilderValidationException("destinationSource")
     if (dimensions.isEmpty) throw new BuilderValidationException("dimensions")
@@ -331,7 +344,7 @@ final class IndexTaskBuilder {
     val timestampSpec = new TimestampSpec
     timestampSpec.setColumn("timestamp")
     timestampSpec.setFormat("iso")
-    timestampSpec.setMissingValue("null")
+    timestampSpec.setMissingValue(missingTimestampValue.orNull)
 
     val parseSpec = new ParseSpec
     parseSpec.setFormat("json")
