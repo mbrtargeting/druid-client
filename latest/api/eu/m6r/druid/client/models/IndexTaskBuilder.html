@@ -790,6 +790,22 @@ types.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;m
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#missingTimestampValue" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="missingTimestampValue:Option[String]"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#missingTimestampValue:Option[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">var</span>
+      </span>
+      <span class="symbol">
+        <span class="name">missingTimestampValue</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -1121,6 +1137,23 @@ and <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;ioConfig&quot; / &qu
       <p class="shortcomment cmt">Sets list of metrics from a list of tuples.</p><div class="fullcomment"><div class="comment cmt"><p>Sets list of metrics from a list of tuples.</p><p>Tuples have to contain <code>(type, name, Option(fieldName))</code>.
 If <code>fieldName</code> is <code>None</code>, <code>name</code> is used as <code>fieldName</code>.</p><p>Specifies <code>&quot;spec&quot; / &quot;dataSchema&quot; / &quot;metricsSpec&quot;</code>
 </p></div><dl class="paramcmts block"><dt class="param">metrics</dt><dd class="cmt"><p>List of tuples containing the metrics.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
+    </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withMissingTimestampValue" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="withMissingTimestampValue(missingTimestampValue:String):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withMissingTimestampValue(String):IndexTaskBuilder"></a>
+      <span class="permalink">
+      <a href="../../../../../eu/m6r/druid/client/models/IndexTaskBuilder.html#withMissingTimestampValue(missingTimestampValue:String):eu.m6r.druid.client.models.IndexTaskBuilder" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withMissingTimestampValue</span><span class="params">(<span name="missingTimestampValue">missingTimestampValue: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="eu.m6r.druid.client.models.IndexTaskBuilder">IndexTaskBuilder</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Timestamp used if event timestamp is missing.</p><div class="fullcomment"><div class="comment cmt"><p>Timestamp used if event timestamp is missing. Default == null.</p><p>If set it has to be a parseable timestamp.
+</p></div><dl class="paramcmts block"><dt class="param">missingTimestampValue</dt><dd class="cmt"><p>Alternative timestamp as String.</p></dd><dt>returns</dt><dd class="cmt"><p>Updated builder</p></dd></dl></div>
     </li><li name="eu.m6r.druid.client.models.IndexTaskBuilder#withQueryGranularity" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="withQueryGranularity(queryGranularity:eu.m6r.druid.client.granularities.QueryGranularity):eu.m6r.druid.client.models.IndexTaskBuilder"></a><a id="withQueryGranularity(QueryGranularity):IndexTaskBuilder"></a>
       <span class="permalink">
