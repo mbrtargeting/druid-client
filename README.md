@@ -9,7 +9,7 @@ You can either use the `druid-client` as a Scala library or from command-line.
 
 Import to your Scala project:
 ```scala
-libraryDependencies ++= Seq("eu.m6r" %% "druid-client" % "0.1.0")
+libraryDependencies ++= Seq("eu.m6r" %% "druid-client" % "0.1.2")
 ```
 
 ## CLI
@@ -48,6 +48,8 @@ JSON Example (json config filename has to end with `json`):
   }
 }
 ```
+
+You can use `models.Utils.parseTaskConfig(file)` to parse a task config file programmatically.
 
 # Build
 
