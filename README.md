@@ -49,6 +49,8 @@ JSON Example (json config filename has to end with `json`):
 }
 ```
 
+You can use `models.Utils.parseTaskConfig(file)` to parse a task config file programmatically.
+
 # Build
 
 We support Scala 2.11 and 2.12. To do a cross-build that create jars for all supported Scala 
