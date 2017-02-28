@@ -288,7 +288,7 @@ final class IndexTaskBuilder {
     * @return Updated builder
     */
   def withConfigFile(configFile: File): IndexTaskBuilder = {
-    val taskConfig = IndexTaskBuilder.parseTaskConfig(configFile)
+    val taskConfig = Utils.parseTaskConfig(configFile)
     this.dimensions = taskConfig.getDimensions.asScala
     this.metrics = taskConfig.getMetrics.asScala
     this
@@ -415,16 +415,5 @@ object IndexTaskBuilder {
         s"Exactly one of $formattedFields has to be defined."
       }
     }
-  }
-
-  private def parseTaskConfig(file: File): TaskConfig = {
-    val jaxbContext = JAXBContext.newInstance(classOf[TaskConfig])
-    val unmarshaller = jaxbContext.createUnmarshaller()
-
-    if (file.getName.endsWith("json")) {
-      unmarshaller.setProperty(UnmarshallerProperties.MEDIA_TYPE, "application/json")
-    }
-
-    unmarshaller.unmarshal(file).asInstanceOf[TaskConfig]
   }
 }
