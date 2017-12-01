@@ -342,7 +342,7 @@ object DruidHttpClient extends LazyLogging {
 
     cmd(Command.CopyDruidToDruid.cmd)
         .action((_, c) => c.copy(Some(Command.CopyDruidToDruid)))
-        .text("Copy a segment from on source to another")
+        .text("Copy a segment from one source to another")
         .children(
           opt[Seq[String]]('d', "dimensions").valueName("<dimension>,<dimension>...")
               .action((x, c) => c.copy(dimensions = x))
@@ -431,7 +431,7 @@ object DruidHttpClient extends LazyLogging {
         .children(
           opt[String]('s', "source").required().valueName("<source>")
               .action((x, c) => c.copy(source = x))
-              .text("Druid source to copy from"),
+              .text("Druid source to delete segments from"),
           opt[String]("segment-start").required().valueName("<segmentStart>")
               .action((x, c) => c.copy(segmentStart = DATE_FORMATTER.parseDateTime(x)))
               .text("Segment start time. Format: yyyy-MM-ddThh:mm:ssZ"),
