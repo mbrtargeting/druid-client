@@ -56,6 +56,7 @@ import eu.m6r.druid.client.granularities.SegmentGranularity
 import eu.m6r.druid.client.models.DruidHost
 import eu.m6r.druid.client.models.IndexTask
 import eu.m6r.druid.client.models.IndexTaskBuilder
+import eu.m6r.druid.client.models.KillTaskBuilder
 import eu.m6r.druid.client.models.RunningTask
 import eu.m6r.druid.client.models.TaskStatus
 
@@ -211,6 +212,43 @@ case class DruidHttpClient(zookeeperHosts: String) extends LazyLogging {
         .map(_.map(deleteSegment(_).map(_.segment)))
         .flatMap(x => Future.sequence(x))
 
+  /** Kills all segments inside a given interval
+    *
+    * @param dataSource Name of the Druid data source.
+    * @param interval The interval. All segements inside the intervals time range will be killed.
+    * @return Future containing id of the kill task.
+    */
+  def killSegmentsInInterval(dataSource: String, interval: Interval): Future[String] = {
+    getCoordinator.map(coordinator => {
+      val killSegmentsPath =
+        s"http://${coordinator.address}:${coordinator.port}/druid/indexer/v1/task/"
+
+      val killTask = new KillTaskBuilder()
+        .withDataSource(dataSource)
+        .withInterval(interval)
+        .build()
+
+      val taskJson = objectMapper.writeValueAsString(killTask)
+
+      val response = Http(killSegmentsPath)
+        .postData(taskJson)
+        .header("content-type", "application/json")
+        .method("POST")
+        .asString
+
+      if (response.isError) {
+        throw new IOException(s"Request failed:${response.body}")
+      }
+
+      response match {
+        case HttpResponse(body: String, HttpStatus.SC_OK, _) =>
+          val taskId = objectMapper.readValue[ObjectNode](body).get("task").textValue()
+          taskId
+        case _ => throw DruidHttpClient.httpException(response)
+      }
+    })
+  }
+
   /** Closes a running indexing task
     *
     * @param taskId Id of the task that shall be closed.
@@ -276,6 +314,8 @@ object DruidHttpClient extends LazyLogging {
 
     case object DeleteSegments extends Command("delete-segments")
 
+    case object KillSegments extends Command("kill-segments")
+
   }
 
   private case class Conf(cmd: Option[Command] = None, zookeeperHosts: String = "",
@@ -302,7 +342,7 @@ object DruidHttpClient extends LazyLogging {
 
     cmd(Command.CopyDruidToDruid.cmd)
         .action((_, c) => c.copy(Some(Command.CopyDruidToDruid)))
-        .text("Copy a segment from on source to another")
+        .text("Copy a segment from one source to another")
         .children(
           opt[Seq[String]]('d', "dimensions").valueName("<dimension>,<dimension>...")
               .action((x, c) => c.copy(dimensions = x))
@@ -391,7 +431,21 @@ object DruidHttpClient extends LazyLogging {
         .children(
           opt[String]('s', "source").required().valueName("<source>")
               .action((x, c) => c.copy(source = x))
-              .text("Druid source to copy from"),
+              .text("Druid source to delete segments from"),
+          opt[String]("segment-start").required().valueName("<segmentStart>")
+              .action((x, c) => c.copy(segmentStart = DATE_FORMATTER.parseDateTime(x)))
+              .text("Segment start time. Format: yyyy-MM-ddThh:mm:ssZ"),
+          opt[String]("segment-end").required().valueName("<segmentEnd>")
+              .action((x, c) => c.copy(segmentEnd = Some(DATE_FORMATTER.parseDateTime(x))))
+              .text("Segment end time. Format: yyyy-MM-ddThh:mm:ssZ")
+        )
+    cmd(Command.KillSegments.cmd)
+        .action((_, c) => c.copy(Some(Command.KillSegments)))
+        .text("Kills segment(s) in a specified data source")
+        .children(
+          opt[String]('s', "source").required().valueName("<source>")
+              .action((x, c) => c.copy(source = x))
+              .text("Druid source to kill segments in"),
           opt[String]("segment-start").required().valueName("<segmentStart>")
               .action((x, c) => c.copy(segmentStart = DATE_FORMATTER.parseDateTime(x)))
               .text("Segment start time. Format: yyyy-MM-ddThh:mm:ssZ"),
@@ -476,6 +530,9 @@ object DruidHttpClient extends LazyLogging {
           case Command.DeleteSegments =>
             val interval = new Interval(conf.segmentStart, conf.segmentEnd.get)
             client.deleteSegmentsInInterval(conf.source, interval)
+          case Command.KillSegments =>
+            val interval = new Interval(conf.segmentStart, conf.segmentEnd.get)
+            client.killSegmentsInInterval(conf.source, interval)
         }
 
         Await.result(future, 2 hours)
