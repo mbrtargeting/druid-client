@@ -11,9 +11,8 @@ useGpg := true
 xjcJvmOpts += "-Duser.language=en"
 xjcCommandLine ++= Seq("-p", "eu.m6r.druid.client.models")
 
-ghpages.settings
-
-site.includeScaladoc()
+enablePlugins(GhpagesPlugin)
+enablePlugins(SiteScaladocPlugin)
 
 val jacksonDependencyVersion = "2.8.6"
 
