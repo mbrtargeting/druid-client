@@ -39,10 +39,6 @@ pomExtra := <url>https://github.com/mbrtargeting/druid-client</url>
         <url>http://www.opensource.org/licenses/mit-license.php</url>
       </license>
     </licenses>
-    <scm>
-      <url>git@github.com:mbrtargeting/druid-client.git</url>
-      <connection>scm:git:git@github.com:mbrtargeting/druid-client.git</connection>
-    </scm>
     <developers>
       <developer>
         <id>gesundkrank</id>
