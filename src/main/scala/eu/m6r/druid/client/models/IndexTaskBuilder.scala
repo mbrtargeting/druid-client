@@ -378,6 +378,7 @@ final class IndexTaskBuilder {
 
     val tuningConfig = new TuningConfig
     tuningConfig.setType("hadoop")
+    tuningConfig.setUseCombiner(true)
     tuningConfig.setJobProperties(jobProperties)
     tuningConfig.setPartitionsSpec(partitionsSpec)
 
