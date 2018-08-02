@@ -11,9 +11,8 @@ useGpg := true
 xjcJvmOpts += "-Duser.language=en"
 xjcCommandLine ++= Seq("-p", "eu.m6r.druid.client.models")
 
-ghpages.settings
-
-site.includeScaladoc()
+enablePlugins(GhpagesPlugin)
+enablePlugins(SiteScaladocPlugin)
 
 val jacksonDependencyVersion = "2.8.6"
 
@@ -40,10 +39,6 @@ pomExtra := <url>https://github.com/mbrtargeting/druid-client</url>
         <url>http://www.opensource.org/licenses/mit-license.php</url>
       </license>
     </licenses>
-    <scm>
-      <url>git@github.com:mbrtargeting/druid-client.git</url>
-      <connection>scm:git:git@github.com:mbrtargeting/druid-client.git</connection>
-    </scm>
     <developers>
       <developer>
         <id>gesundkrank</id>

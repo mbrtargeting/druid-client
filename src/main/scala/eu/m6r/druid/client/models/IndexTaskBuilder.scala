@@ -25,11 +25,9 @@
 package eu.m6r.druid.client.models
 
 import java.io.File
-import javax.xml.bind.JAXBContext
 
 import scala.collection.JavaConverters._
 
-import org.eclipse.persistence.jaxb.UnmarshallerProperties
 import org.joda.time.DateTime
 import org.joda.time.Interval
 
@@ -380,6 +378,7 @@ final class IndexTaskBuilder {
 
     val tuningConfig = new TuningConfig
     tuningConfig.setType("hadoop")
+    tuningConfig.setUseCombiner(true)
     tuningConfig.setJobProperties(jobProperties)
     tuningConfig.setPartitionsSpec(partitionsSpec)
 

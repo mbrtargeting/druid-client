@@ -1,5 +1,6 @@
-addSbtPlugin("org.scala-sbt.plugins" % "sbt-xjc" % "0.8")
-addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "0.8.0")
-addSbtPlugin("com.typesafe.sbt" % "sbt-ghpages" % "0.5.4")
-addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.3")
-addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.0.1")
+addSbtPlugin("org.scala-sbt.plugins" % "sbt-xjc" % "0.9")
+addSbtPlugin("org.scalastyle" %% "scalastyle-sbt-plugin" % "1.0.0")
+addSbtPlugin("com.typesafe.sbt" % "sbt-ghpages" % "0.6.2")
+addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.6")
+addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.1.1")
+
