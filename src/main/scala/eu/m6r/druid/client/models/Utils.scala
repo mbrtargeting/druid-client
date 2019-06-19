@@ -37,7 +37,19 @@ object Utils {
     if (file.getName.endsWith("json")) {
       unmarshaller.setProperty(UnmarshallerProperties.MEDIA_TYPE, "application/json")
     }
-
-    unmarshaller.unmarshal(file).asInstanceOf[TaskConfig]
+    try {
+      unmarshaller.unmarshal(file).asInstanceOf[TaskConfig]
+    } catch {
+      case e: org.xml.sax.SAXParseException => {
+        throw ParseTaskConfigException(e, file)
+      }
+    }
   }
+}
+
+case class ParseTaskConfigException(cause:Throwable, file: File) extends RuntimeException {
+  override def getMessage():String =
+    s"Error while parsing task config file ${file.getAbsolutePath}" +
+      s" on ${java.net.InetAddress.getLocalHost.getHostName}"
+  override def getCause():Throwable = cause
 }
