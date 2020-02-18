@@ -32,17 +32,21 @@ package object models {
   @JsonIgnoreProperties(ignoreUnknown = true)
   case class DruidHost(name: String, address: String, port: Int)
 
+  @JsonIgnoreProperties(ignoreUnknown = true)
   case class TaskStatus(task: String, status: TaskStatus.Status)
 
   object TaskStatus {
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     case class Status(id: String, status: String, duration: Long)
 
   }
 
+  @JsonIgnoreProperties(ignoreUnknown = true)
   case class RunningTask(id: String, createdTime: DateTime, queueInsertionTime: DateTime,
                          location: Location)
 
+  @JsonIgnoreProperties(ignoreUnknown = true)
   case class Location(host: String, port: Int)
 
 }
